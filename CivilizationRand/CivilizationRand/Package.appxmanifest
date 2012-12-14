@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="55299Grrandi.CivRandomizer" Publisher="CN=57F16D1C-6DAB-40F7-A2E3-51F11EAD2D0E" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>CivRandomizer</DisplayName>
+    <PublisherDisplayName>Grrandi</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="CivilizationRand.App">
+      <VisualElements DisplayName="CivRandomizer" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="CivilizationRand is a simple randomizing app for Civilization 5 game. It's purpose is to give players a randomized selection of civs to start with in a multiplayer game with out huge arguments with your mates." ForegroundText="light" BackgroundColor="#404040">
+        <DefaultTile ShowName="allLogos" ShortName="CivRand" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#404040" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
